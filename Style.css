@@ -1,0 +1,364 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f4f1ea;
+}
+
+h1, h2, h3 {
+    font-family: 'Lora', serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Header Section */
+
+/* Logo Styling */
+.logo {
+    font-family: 'Lora', serif;
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    line-height: 1.2;
+    background: linear-gradient(45deg, #8B4513, #A0522D);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.logo-text {
+    display: block;
+}
+
+.logo-text:first-child {
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.logo-text:last-child {
+    font-size: 28px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+header {
+    background-image: url('https://images.pexels.com/photos/10355646/pexels-photo-10355646.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: white;
+    font-weight: bold;
+}
+
+.hero {
+    padding: 100px 20px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    background-color: #8B4513;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #A0522D;
+}
+
+/* Menu Section */
+/* .menu-section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.menu-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.menu-item {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 200px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.menu-item:hover {
+    transform: translateY(-10px);
+}
+
+.menu-item img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.menu-item h3 {
+    margin: 10px 0;
+    font-size: 20px;
+}
+
+.menu-item p {
+    margin: 0 0 10px;
+    font-size: 18px;
+    color: #8B4513;
+} */
+
+/* Menu Section */
+.menu-section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.menu-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 40px; /* Space between menu items and image */
+}
+
+.menu-items {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.menu-item {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 200px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.menu-item:hover {
+    transform: translateY(-10px);
+}
+
+.menu-item img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.menu-item h3 {
+    margin: 10px 0;
+    font-size: 20px;
+}
+
+.menu-item p {
+    margin: 0 0 10px;
+    font-size: 18px;
+    color: #8B4513;
+}
+
+.menu-image {
+    flex: 1;
+}
+
+.menu-image img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design for Menu Section */
+@media (max-width: 768px) {
+    .menu-content {
+        flex-direction: column;
+    }
+
+    .menu-items {
+        order: 2; /* Move menu items below the image on mobile */
+    }
+
+    .menu-image {
+        order: 1; /* Move image above the menu items on mobile */
+    }
+
+    .menu-image img {
+        max-width: 100%;
+    }
+}
+
+/* About Us Section */
+/* .about-section {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #e6d5b8;
+}
+
+.about-section p {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 1.6;
+} */
+
+/* About Us Section */
+.about-section {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #e6d5b8;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 40px; /* Space between text and image */
+}
+
+.about-text {
+    flex: 1;
+    text-align: left;
+}
+
+.about-text p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.about-image {
+    flex: 1;
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design for About Us Section */
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+    }
+
+    .about-text {
+        text-align: center;
+    }
+
+    .about-image img {
+        max-width: 100%;
+    }
+}
+
+/* Contact Section */
+.contact-section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.contact-section form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-section input, .contact-section textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contact-section button {
+    background-color: #8B4513;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.contact-section button:hover {
+    background-color: #A0522D;
+}
+
+/* Footer Section */
+footer {
+    background-color: #8B4513;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+    }
+
+    .menu-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu-item {
+        width: 80%;
+    }
+}
